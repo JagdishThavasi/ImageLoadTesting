@@ -1,7 +1,0 @@
-steps:
-  - name: gcr.io/$PROJECT_ID/docker-compose
-    env:
-      - 'K6_CLOUD_TOKEN=<paste your token here>'
-    args:
-      - run
-      - k6
