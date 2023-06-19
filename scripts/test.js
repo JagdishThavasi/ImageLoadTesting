@@ -26,7 +26,7 @@ export default function () {
     console.log('url-3');
     sharedData.forEach(e => {
         //console.log(e['speedsize-url'])
-        let req = cvs_domain + e['url-3']
+        let req = speedsize_domain + e['speedsize-url-3']
         let res = http.get(req);
     });
     //console.log(sharedData.length)
