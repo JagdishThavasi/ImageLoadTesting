@@ -16,7 +16,7 @@ const sharedData = new SharedArray("URLs", function () {
 
 export const options = {
     vus: 100,
-    iterations: 100
+    iterations: 2500
     //duration: '30s',
 };
 
@@ -34,5 +34,5 @@ export default function () {
     //let sampleData = JSON.stringify(sharedData)
     //sampleData = sampleData.replace('\g','');
     //console.log(sharedData[0]['speedsize-url'])
-    sleep(1);
+    //sleep(1);
 }
