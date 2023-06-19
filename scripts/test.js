@@ -23,10 +23,10 @@ export const options = {
 
 export default function () {
     //const res = http.get('https://test.k6.io');
-    console.log('speedsize-url-9');
+    console.log('speedsize-url');
     sharedData.forEach(e => {
         //console.log(e['url'])
-        let req = speedsize_domain + e['speedsize-url-9']
+        let req = speedsize_domain + e['speedsize-url']
         let res = http.get(req);
     });
     //console.log(sharedData.length)
