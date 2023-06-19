@@ -23,10 +23,10 @@ export const options = {
 
 export default function () {
     //const res = http.get('https://test.k6.io');
-    console.log('scene7-url-6');
+    console.log('url-9');
     sharedData.forEach(e => {
-        //console.log(e['scene7-url-6'])
-        let req = scene7_domain + e['scene7-url-6']
+        //console.log(e['url-9'])
+        let req = cvs_domain + e['url-9']
         let res = http.get(req);
     });
     //console.log(sharedData.length)
