@@ -24,7 +24,7 @@ export const options = {
 
 
 export default function () {
-    const res = http.get('https://us-central1-imageloadtesting.cloudfunctions.net/debug-user-agent');
+    const res = http.get('https://us-central1-imageloadtesting.cloudfunctions.net/debug-useragent');
     //console.log('speedsize-url');
     //sharedData.forEach(e => {
         //console.log(e['url'])
