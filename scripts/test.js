@@ -15,20 +15,23 @@ const sharedData = new SharedArray("URLs", function () {
 });
 
 export const options = {
-    vus: 100,
-    iterations: 2500
+    //vus: 100,
+    //iterations: 2500
     //duration: '30s',
+    vus: 2,
+    iterations: 2
 };
 
 
 export default function () {
-    //const res = http.get('https://test.k6.io');
-    console.log('speedsize-url');
-    sharedData.forEach(e => {
+    const res = http.get('https://us-central1-imageloadtesting.cloudfunctions.net/debug-user-agent');
+    //console.log('speedsize-url');
+    //sharedData.forEach(e => {
         //console.log(e['url'])
-        let req = speedsize_domain + e['speedsize-url']
-        let res = http.get(req);
-    });
+        //let req = speedsize_domain + e['speedsize-url']
+        //let res = http.get(req);
+        //let res = http.get('https://us-central1-imageloadtesting.cloudfunctions.net/debug-user-agent')
+    //});
     //console.log(sharedData.length)
 
 
