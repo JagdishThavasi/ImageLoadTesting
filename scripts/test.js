@@ -24,19 +24,9 @@ export const options = {
 
 
 export default function () {
-    const res = http.get('https://us-central1-imageloadtesting.cloudfunctions.net/debug-useragent');
-    //console.log('speedsize-url');
-    //sharedData.forEach(e => {
-        //console.log(e['url'])
-        //let req = speedsize_domain + e['speedsize-url']
-        //let res = http.get(req);
-        //let res = http.get('https://us-central1-imageloadtesting.cloudfunctions.net/debug-user-agent')
-    //});
-    //console.log(sharedData.length)
-
-
-    //let sampleData = JSON.stringify(sharedData)
-    //sampleData = sampleData.replace('\g','');
-    //console.log(sharedData[0]['speedsize-url'])
-    //sleep(1);
+    sharedData.forEach(e => {
+        console.log(e['url'])
+        let req = speedsize_domain + e['speedsize-url']
+        let res = http.get(req);
+    });
 }
