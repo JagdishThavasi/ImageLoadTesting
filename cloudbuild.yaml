@@ -1,9 +1,5 @@
 steps:
   - name: gcr.io/$PROJECT_ID/docker-compose
-    env:
-      - 'DOMAIN=https://cdn.speedsize.com'
-      - 'IMAGETYPE=speedsize-url'
-      - 'FLATTEN=/fltn'
     args:
       - run
       - k6
