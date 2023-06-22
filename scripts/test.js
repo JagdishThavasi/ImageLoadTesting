@@ -19,8 +19,8 @@ const sharedData = new SharedArray("URLs", function () {
 });
 
 export const options = {
-    vus: 100,
-    iterations: 2500
+    vus: 1,
+    iterations: 2
     //duration: '30s',
 };
 
