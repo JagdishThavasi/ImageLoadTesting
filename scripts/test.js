@@ -27,15 +27,15 @@ export const options = {
 
 export default function () {
     //const res = http.get('https://test.k6.io');
-    console.log(domain)
-    console.log(imageType)
+    //console.log(domain)
+    //console.log(imageType)
     const params = {
         headers: { 'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36' },
       };
     sharedData.forEach(e => {
         //console.log(e['speedsize-url'])
         let req = domain + e[imageType] + flatten
-        console.log(req)
+        //console.log(req)
         let res = http.get(req, params);
     });
     //console.log(sharedData.length)
